@@ -53,6 +53,13 @@ a {
     transform: translateX(9px);
 }
 
+@media only screen and (max-width: 400px ){
+    .navbar .title {
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+}
+
 .navbar .center {
     display: flex;
     justify-content: center;
@@ -207,6 +214,22 @@ a {
     display: flex;
     margin-bottom: 100px;
 }
+
+@media only screen and (max-width: 500px) {
+    .rules .container {
+        display: block;
+    }
+
+    .rules .container .left {
+        margin: 0;
+        width: 100%;
+    }
+
+    .rules .container .content {
+        width: 100%;
+    }
+}
+
 /* ? TERMS */
 .container .content {
     width: 70%;
@@ -270,6 +293,25 @@ a {
 .process .line-seg strong {
     width: auto;
     white-space: nowrap;
+}
+
+@media only screen and (max-width: 500px) {
+    .process .line-seg {
+        display: block;
+    }
+
+    .process .line-seg div {
+        margin-left: 50px;
+    }
+
+    .process .content .line-seg strong {
+        margin: 0;
+    }
+
+    .rules .process .content .line-seg i {
+        transform: translateY(-1px);
+        margin-right: 10px;
+    }
 }
 
 /* ? CAN / CANTS */
@@ -377,6 +419,21 @@ a {
     width: 50%;
 }
 
+@media only screen and (max-width: 500px) {
+    .prices {
+        display: block;
+    }
+    .prices header {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .prices .content {
+        width: 100% !important;
+    }
+}
+
 .prices .content {
     font-size: 1.3rem;
     width: 50%;
@@ -481,6 +538,7 @@ a {
     bottom: 0; left: 0; right: 0;
     text-align: center;
     padding-top: 20px;
+    margin: 0 30px;
 }
 
 /* ? SWIPER */
